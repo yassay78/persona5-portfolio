@@ -1,0 +1,10 @@
+tools/*
+!tools/dev-server.js
+!tools/record-demo.js
+reference/videos/
+.superpowers/
+assets/photos/*.heic
+docs/*.mp4
+docs/
+reference/
+.claude/

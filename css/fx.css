@@ -1,0 +1,56 @@
+.fx-band {
+  position: absolute; top: -20%; left: -10%; width: 120%; height: 140%;
+  clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%);
+  transform-origin: center;
+}
+.fx-band--red { background: var(--red); }
+.fx-band--black {
+  background:
+    repeating-linear-gradient(115deg, transparent 0 60px, rgba(255,255,255,.06) 60px 64px),
+    var(--black);
+  clip-path: polygon(12% 0, 100% 0, 88% 100%, 4% 100%);
+}
+
+.fx-line {
+  position: absolute; left: 50%; top: 50%;
+  width: 3000px; height: 10px; margin: -5px 0 0 -1500px;
+  background: var(--black);
+  box-shadow: 0 0 0 3px var(--white);
+}
+.fx-line--slant {
+  left: 55%; top: -10%; width: 14px; height: 120%; margin: 0;
+  transform-origin: top; rotate: 8deg;
+  background: var(--white);
+  box-shadow: -6px 0 0 var(--black), 6px 0 0 var(--red);
+}
+.fx-wedge { position: absolute; inset: 0; background: var(--white); }
+
+.fx-burst {
+  position: absolute; left: 50%; top: 50%; width: 3200px; height: 3200px; margin: -1600px 0 0 -1600px;
+  background: repeating-conic-gradient(var(--red) 0 9deg, var(--red-deep) 9deg 18deg);
+  clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.fx-white { position: absolute; inset: 0; background: var(--white); }
+
+.fx-cutin {
+  position: absolute; left: 0; right: 0; top: 330px; height: 420px; overflow: hidden;
+  background: var(--red);
+}
+.fx-cutin__stripes {
+  position: absolute; inset: 0 -220px;
+  background: repeating-linear-gradient(-60deg, var(--black) 0 40px, var(--red) 40px 90px);
+  opacity: .9;
+}
+.fx-cutin__face {
+  position: absolute; right: 80px; top: 0; width: 760px; height: 100%; overflow: hidden;
+  background: var(--white); clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%);
+  border-left: 14px solid var(--black);
+}
+.fx-cutin__face img { position: absolute; width: 2100px; left: -1120px; top: -230px; transform: rotate(8deg); }
+.fx-cutin__text { position: absolute; left: 140px; top: 120px; font-size: 150px; }
+
+.fx-split { position: absolute; inset: 0; background: linear-gradient(115deg, var(--black) 0 48%, var(--red) 48% 100%); }
+.fx-card {
+  position: absolute; left: 50%; top: 50%; width: 520px; height: 300px; margin: -150px 0 0 -260px;
+  background: var(--red); border: 10px solid var(--black); box-shadow: 0 0 0 6px var(--white);
+}
